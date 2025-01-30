@@ -26,7 +26,7 @@ function renderTodos() {
 // Function to add a new todo
 function addTodo(event) {
     event.preventDefault(); //Prevent form submission
-    const newTodo = todoInput.ariaValueMax.trim();
+    const newTodo = todoInput.value.trim();
     if (newTodo) {
         todos.push(newTodo);
         todoInput.value = ''; // Clear the input
